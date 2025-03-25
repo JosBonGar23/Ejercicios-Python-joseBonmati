@@ -12,15 +12,15 @@ def fibonacci(n) :
     elif n==1 :
         vector.append(1)
         return vector
-    elif n >=2 :
-        # Implementa las series de Fibonacci
-        # vector[0]=1
-        # vector[1]=1
-
+    elif n >= 2:
+        # Primeros dos valores de la serie de Fibonacci
         vector.append(1)
         vector.append(1)
 
-        # --> Implemente el código del Bucle <--
+        # Bucle para completar la serie
+        for i in range(2, n):
+            siguiente = vector[i - 1] + vector[i - 2]
+            vector.append(siguiente)
         
     elif n==1 :
         vector[0]=1
