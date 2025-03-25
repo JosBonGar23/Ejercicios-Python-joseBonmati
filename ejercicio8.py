@@ -18,9 +18,11 @@ def fibonacci(n) :
         vector.append(1)
 
         # Bucle para completar la serie
-        for i in range(2, n):
+        i = 2
+        while i < n:
             siguiente = vector[i - 1] + vector[i - 2]
             vector.append(siguiente)
+            i += 1
     elif n==1 :
         vector[0]=1
 
